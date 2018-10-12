@@ -1,0 +1,167 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Niramit');
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: niramit, avro, serif,;
+}
+h1, h2, h3, h4{
+    font-family: serif;
+}
+p{
+    
+}
+.container{
+    max-width: 1500%;
+    background-color: hsl(182, 100%, 99%);
+
+}
+.subnav{
+    background-color: hsl(183, 68%, 21%);
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+}
+.subnav a{
+    color: hsl(182, 70%, 51%);
+    text-transform: uppercase;
+    font-size: 0.707rem;
+    text-decoration: none;
+    font-family: sans-serif ;
+}
+/*.subnav a:visited{
+    color: hsl(152, 48%, 83%);
+}*/
+.subnav a:hover{
+    color: hsl(182, 52%, 45%);
+}
+.mainnav{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.414rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: hsl(182, 68%, 21%);
+    height: 35px;
+    width: auto;
+}
+.mainnav a {
+    display: inline-block;
+    float:inherit;
+    color: hsl(182, 70%, 51%);
+    text-decoration: none;
+    font-family: sans-serif;
+}
+/*.mainnav a:visited {
+    color: hsl(152, 48%, 83%);
+}*/
+.mainnav a:hover{
+    color: hsl(182, 52%, 45%);
+}
+.mainnav a:nth-child(n+2){
+    border-left: 1px solid;
+    border-color: hsl(182, 100%, 36%);
+    padding: 0rem 1rem 0rem 1rem;
+}
+.masthead{
+    background-color:hsl(182, 67%, 36%);
+    height: 240px;
+    width: 100%;
+}
+.times-logo{
+    margin-left: 20%;
+    margin-right: 20%;
+/*    height: 90%;*/
+    background-color:  hsl(182, 67%, 18%) ;
+    text-align: ;
+    width: 60%;
+/*    min-width: 20%;*/
+
+}
+header .h1 {
+    text-transform: lowercase;
+    font-weight: 700;
+    color:gray;
+    display: inline-block;
+  }
+.masthead h1{   
+    text-align: center;
+    font-size: 3rem;
+/*    max-height: 2vw;*/
+    color: hsl(182, 67%, 18%);
+    text-shadow: 1px 1px 1px hsl(182, 48%, 83%);
+}
+.content{
+     
+}
+.content .story{
+    padding: 0.7rem;
+}
+.story.lead-story{
+}
+h1.story-title{
+    font-size: 1.999rem;
+    border-left: 20px solid hsl(182, 98%, 26%);
+    background-color: hsl(183, 30%, 80%);;
+    color: hsl(182, 98%, 26%) ;
+    text-shadow: 1px 1px 0px hsl(182, 61%, 10%);
+}
+.story img{
+    float: left;
+    padding-right: 1rem;
+}
+.story p{
+    font-size: 1rem;
+    padding: 1rem 0rem 0rem 0rem;
+}
+.story blockquote{
+    padding: 0.3rem 1rem 0rem 0rem;
+    text-align: right;
+    border-right: 5px solid hsl(182, 91%, 17%);
+    quotes: "\201C" "\201D";
+    font-size: 1.414rem;
+}
+.story blockquote::before{
+    content: open-quote;
+}
+.story blockquote::after{
+    content: close-quote;
+}
+.story p.byline{
+    font-size: 1rem;
+}
+p.byline span.author{
+    font-weight: bold;
+}
+p.byline span.pub{
+    color: hsl(182, 41%, 20%);
+}
+.foot{
+    text-align: center;
+    padding: 0.5rem;
+    border-top: 1px solid hsl(182, 52%, 45%);
+    color: hsl(182, 52%, 45%);
+}
+.foot p{
+    font-size: 0.8rem;
+}
+@media screen and (max-width: 550px){
+    .masthead h1{
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+    .times-logo{
+        margin-left: 10%;
+        margin-left: 10%;
+        width: 80%;
+        height: auto;
+    }
+}
